@@ -124,7 +124,7 @@ postgres   NodePort   10.100.34.227   <none>        5432:30223/TCP   6m24s
 We need to use port 30223 to connect to PostgreSQL from machine/node present in kubernetes cluster with credentials given in the configmap earlier.
 
 ```
-$ psql -h localhost -U postgresadmin --password -p 30223 postgresdb
+$ psql -h localhost -U postgresadmin --password -p 30223
 ```
 
 ## Delete resources
